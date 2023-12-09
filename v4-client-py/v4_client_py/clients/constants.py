@@ -1,9 +1,9 @@
 from enum import Enum
-from ..chain.aerial.config import NetworkConfig
+from v4_client_py.chain.aerial.config import NetworkConfig
 
 
 # ------------ API URLs ------------
-INDEXER_API_HOST_MAINNET = 'https://indexer.dydx.trade/v4'
+INDEXER_API_HOST_MAINNET = 'https://indexer.dydx.trade/'
 INDEXER_API_HOST_TESTNET = 'https://dydx-testnet.imperator.co'
 
 INDEXER_WS_HOST_MAINNET = 'wss://indexer.dydx.trade/v4/ws'
@@ -18,7 +18,7 @@ VALIDATOR_GRPC_MAINNET = 'dydx-mainnet-full-grpc.public.blastapi.io:443'
 VALIDATOR_GRPC_TESTNET = 'test-dydx-grpc.kingnodes.com'
 
 # ------------ Ethereum Network IDs ------------
-NETWORK_ID_MAINNET = 1
+NETWORK_ID_MAINNET = 'dydx-mainnet-1'
 NETWORK_ID_TESTNET = 'dydx-testnet-4'
 
 # ------------ Market Statistic Day Types ------------

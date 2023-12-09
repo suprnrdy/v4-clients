@@ -79,7 +79,7 @@ class NetworkConfig:
         """
         return NetworkConfig(
             chain_id="dydx-testnet-4",
-            url="grpc+https://dydx-testnet-archive.allthatnode.com:9090",
+            url="grpc+https://test-dydx-grpc.kingnodes.com",
             fee_minimum_gas_price=4630550000000000,
             fee_denomination="adv4tnt",
             staking_denomination="dv4tnt",
@@ -119,6 +119,17 @@ class NetworkConfig:
         return NetworkConfig(
             chain_id="fetchhub-4",
             url="grpc+https://grpc-fetchhub.fetch.ai",
+            fee_minimum_gas_price=0,
+            fee_denomination="afet",
+            staking_denomination="afet",
+            faucet_url=None,
+        )
+    
+    @classmethod
+    def fetchai_realnet(cls) -> "NetworkConfig":
+        return NetworkConfig(
+            chain_id="dydx-mainnet-1",
+            url="grpc+https://dydx-ops-grpc.kingnodes.com/",
             fee_minimum_gas_price=0,
             fee_denomination="afet",
             staking_denomination="afet",
